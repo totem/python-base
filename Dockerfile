@@ -5,5 +5,5 @@ RUN apt-get install -y wget curl python python-dev python-pip git-core build-ess
 
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
-ENTRYPOINT ['python']
-CMD ['--version']
+ENTRYPOINT ["python"]
+CMD ["--version"]
