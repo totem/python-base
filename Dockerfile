@@ -1,4 +1,4 @@
-FROM totem/ubuntu:raring
+FROM ubuntu:trusty
  
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y wget curl python python-dev python-pip git-core build-essential libevent1-dev libssl-dev
