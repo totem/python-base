@@ -1,7 +1,7 @@
-FROM ubuntu:trusty
+FROM totem/totem-base:trusty
  
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y wget curl python python-dev python-pip git-core build-essential libevent1-dev libssl-dev
+RUN apt-get install -y libevent1-dev
 
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
