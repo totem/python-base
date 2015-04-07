@@ -8,7 +8,7 @@ RUN apt-get update && \
 RUN pip install --upgrade requests==2.6.0 && \
     easy_install -U pip
 
-RUN pip install --upgrade urllib3==1.10.2 requests[security]==2.6.0
+RUN pip install --upgrade pip urllib3==1.10.2 requests[security]==2.6.0
 
 ENTRYPOINT ["python"]
 CMD ["--version"]
