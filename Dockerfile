@@ -1,4 +1,4 @@
-FROM totem/totem-base:trusty
+FROM totem/totem-base:trusty-1.0.1
  
 RUN apt-get update && \
    apt-get upgrade -y && \
